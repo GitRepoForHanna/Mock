@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite thread-count="10" verbose="10" name="WireMock_Project" annotations="JDK" parallel="tests">
+    <test name="WireMock">
+        <classes>
+            <class name="wiremock.PostMethodScenario"/>
+            <class name="wiremock.ServerError"/>
+            <class name="wiremock.FileDownloading"/>
+            <class name="wiremock.AuthorisationScenarios"/>
+        </classes>
+    </test>
+
+</suite>
