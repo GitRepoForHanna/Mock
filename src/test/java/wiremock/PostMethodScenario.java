@@ -16,8 +16,6 @@ public class PostMethodScenario extends BaseTest{
     public void prepareStubs() {
         server.stubFor(post(urlEqualTo(BASE_PATH))
                 .willReturn(ok()));
-
-//        RestAssured.baseURI = buildURI(server.port());
     }
 
     @Test

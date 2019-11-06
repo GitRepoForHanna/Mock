@@ -18,7 +18,6 @@ public class FileDownloading extends BaseTest{
     public void prepareStubs() {
         server.stubFor(get(urlEqualTo(BASE_PATH))
                 .willReturn(aResponse().withBodyFile("weather.txt")));
-//        RestAssured.baseURI = buildURI(server.port());
     }
 
     @Test

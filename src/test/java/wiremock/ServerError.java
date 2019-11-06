@@ -17,7 +17,6 @@ public class ServerError extends BaseTest{
     public void prepareStubs() {
         server.stubFor(post(urlEqualTo(BASE_PATH + ERROR_PATH))
                 .willReturn(serverError()));
-//        RestAssured.baseURI = buildURI(server.port());
     }
 
     @Test
